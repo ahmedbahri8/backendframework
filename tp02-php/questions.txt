@@ -1,0 +1,16 @@
+QUESTIONS DE REFLEXION - TP 2
+
+1. Pourquoi utiliser un tableau plutot que $etudiant1, $etudiant2, etc. ?
+Un tableau regroupe les donnees sous un seul nom, permet de les parcourir avec une boucle, d'en ajouter ou d'en supprimer dynamiquement et de passer l'ensemble a une fonction. Avec des variables numerotees, il faudrait ecrire du code repetitif, et le nombre d'etudiants serait fixe dans le code.
+
+2. Quelle difference entre $etudiants[0] et $etudiant["nom"] ?
+$etudiants[0] accede a un element par son indice numerique (position) dans un tableau indexe : ici, le premier etudiant. $etudiant["nom"] accede a une valeur par sa cle (texte) dans un tableau associatif : ici, le nom de cet etudiant.
+
+3. Pourquoi une fonction ameliore-t-elle la reutilisation du code ?
+Elle est ecrite une seule fois puis appelee autant de fois que necessaire avec des parametres differents. Le code est plus court, plus lisible, plus facile a tester et a corriger (une seule modification suffit).
+
+4. Quelle difference entre echo et return ?
+echo affiche immediatement du texte dans la sortie (la page) ; la valeur n'est pas recuperable. return renvoie une valeur a l'appelant et termine la fonction ; on peut la stocker, la calculer, la tester ou l'afficher plus tard.
+
+5. Pourquoi separer les fonctions dans un fichier ?
+Pour organiser le projet, eviter de dupliquer les fonctions dans chaque page, les reutiliser avec require_once, et faciliter la maintenance : le code de traitement est separe de l'affichage.
